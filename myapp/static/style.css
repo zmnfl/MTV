@@ -1,0 +1,907 @@
+﻿﻿* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*@font-face {
+    font-family: "Popins Medium";
+    src: url("../babydogfinalversion_v2_23.06.2022/font\ \(poppins\)/Poppins-Medium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+    }
+    @font-face {
+        font-family: "Popins SemiBold";
+        src: url("../babydogfinalversion_v2_23.06.2022/font\ \(poppins\)/Poppins-SemiBold.ttf") format("truetype");
+        font-style: normal;
+        font-weight: normal;
+        }
+        @font-face {
+            font-family: "Popins Medium Italic";
+            src: url("../babydogfinalversion_v2_23.06.2022/font\ \(poppins\)/Poppins-MediumItalic.ttf") format("truetype");
+            font-style: normal;
+            font-weight: normal;
+            }*/
+
+
+.sitename {
+    width: 100%;
+    background-color: #24A1DF;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Popins Medium';
+    color: white;
+}
+
+
+.nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 65px;
+    justify-content: flex-end;
+    background-color: white;
+}
+
+.connect button {
+    font-family: "Popins SemiBold";
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 18px;
+    padding-right: 18px;
+    border-radius: 20px;
+    background: #2B3C91;
+    color: white;
+    border: 0px;
+}
+
+.rerer {
+    vertical-align: middle;
+    /* font-family: "Popins SemiBold";
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 18px;
+  padding-right: 18px;
+  border-radius: 20px;
+  background: #2B3C91;
+  color: white;
+  border: 0px; */
+}
+
+.non_active {
+    pointer-events: none;
+}
+
+.connect {
+    margin-right: 165px;
+}
+
+
+.logo img {
+    width: 160px;
+    margin-left: 165px;
+}
+
+
+.main_blog {
+    background-size: cover;
+    width: 100%;
+    background: url(IMG/bg2.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+
+.welcom_text {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.text {
+    width: 450px;
+    color: white;
+    margin-top: 46px;
+}
+
+    .text h1 {
+        font-family: "Popins SemiBold";
+        font-size: 48px;
+    }
+
+
+.main_nft_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.nft_box {
+    margin-bottom: 30px;
+    height: 730px;
+    width: 474px;
+    border-radius: 24px;
+    background: rgb(55,105,36);
+    background: linear-gradient(0deg, rgba(55,105,36,1) 0%, rgba(4,4,4,1) 100%);
+    backdrop-filter: blur(120px);
+}
+
+
+.box_nft_text {
+    font-family: "Popins SemiBold";
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: white;
+}
+
+.p1_1 {
+    text-align: end;
+    font-family: 'Popins Medium Italic';
+    font-size: 12px;
+}
+
+.p1_2 {
+    text-align: end;
+    font-family: "Popins SemiBold";
+    font-size: 22px;
+}
+
+.p1_3 {
+    text-align: end;
+    font-family: 'Popins Medium Italic';
+    font-size: 14px;
+}
+
+.p1_4 {
+    text-align: end;
+    font-family: 'Popins Medium Italic';
+    font-size: 20px;
+    margin-top: 26px;
+}
+
+.text_box {
+    margin-top: 30px;
+}
+
+.box_nft_text_1 {
+    font-family: "Popins Medium Italic";
+    font-size: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    margin-bottom: 10px;
+}
+
+
+.main_about_nft {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.about_nft {
+    position: relative;
+    display: flex;
+    width: 400px;
+    height: 224px;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+
+.gif_nft {
+    width: 218px;
+    height: 224px;
+    border-radius: 20px;
+}
+
+
+    .gif_nft img {
+        width: 218px;
+        height: 224px;
+        border-radius: 20px;
+    }
+
+.info_nft {
+    color: white;
+    position: absolute;
+    right: 0px;
+    top: 40px;
+}
+
+
+
+
+.count {
+    margin-top: 36px;
+    width: 400px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 65px;
+    justify-content: space-between;
+    background: #262827;
+    border-radius: 14px;
+}
+
+
+.main_count {
+    display: flex;
+    justify-content: center;
+}
+
+.count_of_nft {
+    margin-left: 22px;
+}
+
+    .count_of_nft input {
+        width: 10px;
+        background-color: #262827;
+        outline: none;
+        border: 0px;
+        margin-left: 54px;
+        font-family: "Popins Medium";
+        color: white;
+        font-size: 18px;
+    }
+
+.minte {
+    text-align: center;
+    margin-top: 15px;
+    color: white;
+    font-family: 'Popins Medium';
+}
+
+
+
+.max {
+    font-family: "Popins Medium";
+    color: white;
+    margin-right: 22px;
+    cursor: pointer;
+}
+
+
+button {
+    background: #262827;
+    border: 0px;
+    color: #C6C6C6;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3px;
+}
+
+
+.main_tottal {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: white;
+}
+
+.tottal {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    height: 65px;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    align-items: center;
+}
+
+.polzunok input {
+    background-color: white;
+    cursor: pointer;
+}
+
+
+.total_text {
+    font-family: "Popins Medium";
+}
+
+
+.price {
+    font-family: "Popins SemiBold";
+    font-size: 18px;
+}
+
+
+
+.btuun button {
+    width: 400px;
+    height: 61px;
+    border-radius: 14px;
+    background-color: white;
+    color: black;
+}
+
+.btuun {
+    width: 400px;
+    height: 61px;
+}
+
+.main_btuun {
+    margin-top: 32px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.buyonopensea {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+
+    .buyonopensea button {
+        width: 263px;
+        height: 71px;
+        font-size: 22px;
+        border-radius: 36px;
+        background-color: white;
+        color: black;
+    }
+
+
+.join {
+    width: 100%;
+    min-height: 120px;
+    height: 100%;
+    background: no-repeat url(IMG/bg_join.PNG);
+    background-position: bottom center;
+    /*background-color: white;*/
+}
+
+
+button a {
+    text-decoration: none;
+    color: black;
+}
+
+.main_comunity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.comunity {
+    display: flex;
+    align-items: center;
+    max-width: 540px;
+}
+
+
+.main_box_text {
+    width: 25%;
+}
+
+.comunity .img {
+    margin: 0 10px;
+}
+
+.minus h1 {
+    margin-top: 0;
+}
+
+.plus h1 {
+    margin-top: .75em;
+}
+
+.smart_contract_text {
+    color: #89db69;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width:1000px) {
+    .connect {
+        margin-right: 60px;
+    }
+
+
+    .main_nft_box_flex {
+        flex-direction: column;
+    }
+
+        .main_nft_box_flex div:nth-child(2) {
+            order: -1;
+        }
+
+        .main_nft_box_flex div:nth-child(3) {
+            order: 2;
+        }
+
+    .count div:nth-child(2) {
+        order: 1;
+    }
+
+    .count div:nth-child(3) {
+        order: 2;
+    }
+
+    .main_box_text {
+        max-width: 700px;
+        width: 90%;
+        margin-top: 50px;
+    }
+
+    .logo img {
+        width: 160px;
+        margin-left: 60px;
+    }
+}
+
+
+@media screen and (max-width:560px) {
+
+    .connect {
+        margin-right: 30px;
+    }
+
+
+    .logo img {
+        width: 160px;
+        margin-left: 30px;
+    }
+}
+
+
+@media screen and (max-width:517px) {
+    .main_blog {
+        background-size: 95% auto;
+    }
+
+    .smart_contract_text {
+        font-size: 16px;
+    }
+
+    .nft_box {
+        /*margin-top: 30px;*/
+        height: 530px;
+        width: 350px;
+        border-radius: 24px;
+        backdrop-filter: blur(120px);
+    }
+
+    .box_nft_text {
+        font-family: "Popins SemiBold";
+        font-size: 11px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        color: white;
+    }
+
+    .about_nft {
+        position: relative;
+        display: flex;
+        width: 275px;
+        height: 155px;
+        border-radius: 20px;
+        margin-top: 30px;
+    }
+
+
+    .gif_nft {
+        width: 150px;
+        height: 155px;
+        border-radius: 20px;
+    }
+
+        .gif_nft img {
+            width: 150px;
+            height: 155px;
+            border-radius: 20px;
+        }
+
+    .info_nft {
+        color: white;
+        position: absolute;
+        right: 0px;
+        top: 40px;
+    }
+
+    .p1_1 {
+        text-align: end;
+        font-family: 'Popins Medium Italic';
+        font-size: 10px;
+    }
+
+    .p1_2 {
+        text-align: end;
+        font-family: "Popins SemiBold";
+        font-size: 14px;
+    }
+
+    .p1_3 {
+        text-align: end;
+        font-family: 'Popins Medium Italic';
+        font-size: 11px;
+    }
+
+    .p1_4 {
+        text-align: end;
+        font-family: 'Popins Medium Italic';
+        font-size: 14px;
+        margin-top: 26px;
+    }
+
+    .count {
+        margin-top: 36px;
+        width: 275px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 45px;
+        justify-content: space-between;
+        background: #262827;
+        border-radius: 14px;
+    }
+
+    .polzunok input {
+        display: none;
+    }
+
+    .tottal {
+        width: 275px;
+        display: flex;
+        justify-content: space-between;
+        height: 45px;
+        border-bottom: 1px solid white;
+        border-top: 1px solid white;
+        align-items: center;
+    }
+
+
+    .total_text {
+        font-family: "Popins Medium";
+    }
+
+
+    .price {
+        font-family: "Popins SemiBold";
+        font-size: 18px;
+    }
+
+        .price h1 {
+            font-family: "Popins SemiBold";
+            font-size: 18px;
+        }
+
+    .main_count {
+        margin-top: -15px;
+    }
+
+    .main_tottal {
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        color: white;
+    }
+
+    .max {
+        font-family: "Popins Medium";
+        color: white;
+        margin-right: 9px;
+    }
+
+    .btuun {
+        width: 275px;
+    }
+
+        .btuun button {
+            width: 275px;
+            height: 42px;
+        }
+
+    .main_btuun {
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .buyonopensea {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+
+        .buyonopensea button {
+            width: 200px;
+            height: 40px;
+            font-size: 16px;
+            border-radius: 36px;
+            background-color: white;
+            color: black;
+        }
+
+
+    .minte {
+        text-align: center;
+        margin-top: -10px;
+        color: white;
+        font-family: 'Popins Medium';
+        font-size: 10px;
+    }
+
+    .welcom_text {
+        height: 220px;
+    }
+}
+
+
+@media screen and (max-width:450px) {
+
+    .text {
+        width: 100%;
+    }
+
+        .text h1 {
+            text-align: center;
+            width: 423px;
+            color: white;
+            margin-top: 46px;
+            font-size: 30px;
+            width: 100%;
+        }
+
+    .welcom_text {
+        height: 180px;
+    }
+}
+
+
+@media screen and (max-width:390px) {
+
+    .text {
+        width: 100%;
+    }
+
+        .text h1 {
+            text-align: center;
+            width: 423px;
+            color: white;
+            margin-top: 46px;
+            font-size: 30px;
+            width: 100%;
+        }
+
+    .welcom_text {
+        height: 145px;
+    }
+}
+
+@media screen and (max-width:335px) {
+    .comunity img {
+        width: 100%;
+    }
+
+    .connect {
+        margin-right: 10px;
+    }
+
+
+    .logo img {
+        width: 160px;
+        margin-left: 10px;
+    }
+
+    .welcom_text {
+        height: 100px;
+    }
+
+    .smart_contract_text {
+        margin-top: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+.minandplus {
+    width: 60px;
+    justify-content: space-between;
+    display: flex;
+    color: white;
+    align-items: center;
+}
+
+.noncoursor {
+    cursor: pointer;
+}
+
+
+.wallet {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Syne';
+}
+
+    .wallet button {
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Syne';
+        background-color: transparent;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+
+/* Закрываем lightbox */
+.lightbox {
+    display: none;
+}
+
+
+    /* Открываем lightbox */
+    .lightbox:target {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 5;
+        border-radius: 10px;
+    }
+
+    /* Содержимое lightbox  */
+    .lightbox figcaption {
+        width: 30rem;
+        height: 250px;
+        position: relative;
+        padding: 1.5em;
+        background-color: white;
+        border-radius: 10px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lightbox button {
+        padding: 5px;
+        background-color: #FFFFFF;
+        border-radius: 10px;
+        border: 0px;
+        font-size: 32px;
+        cursor: pointer;
+    }
+
+    .lightbox img {
+        width: 60px;
+        height: 60px;
+    }
+
+    /* Кнопка закрытия */
+    .lightbox .close {
+        position: relative;
+        display: block;
+    }
+
+        .lightbox .close::after {
+            right: -1rem;
+            top: -1rem;
+            width: 2rem;
+            height: 2rem;
+            position: absolute;
+            display: flex;
+            z-index: 1;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+            border-radius: 50%;
+            color: white;
+            content: "×";
+            cursor: pointer;
+        }
+
+        /* Обёртка lightbox  */
+        .lightbox .close::before {
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            background-color: rgba(0,0,0,.7);
+            content: "";
+            cursor: default;
+        }
+
+
+    .lightbox figcaption div {
+        display: flex;
+        cursor: pointer;
+    }
+
+.wallet {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Syne';
+}
+
+    .wallet button {
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Syne';
+        background-color: transparent;
+        font-size: 24px;
+    }
+
+.disconnect {
+    display: none;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 24px;
+    padding-right: 24px;
+    background-color: #0140FF;
+    text-decoration: none;
+    -moz-text-decoration-style: none;
+    color: white;
+    font-family: 'Syne', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    z-index: 100;
+}
+
+.loaded_but {
+    background-image: url("IMG/loading.gif");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    pointer-events: none;
+}
+
+.main_nft_box_flex {
+    max-width: 1400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}

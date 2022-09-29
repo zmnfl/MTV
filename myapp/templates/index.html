@@ -1,0 +1,205 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaceApes</title>
+    <link rel="stylesheet" href={% static "style.css" %}>
+    <link rel="icon" type="image/x-icon" href={% static "/IMG/logo.ico" %}>
+    <!--<link rel="stylesheet" href="jquery.nice-number.css">-->
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js"></script>
+
+    <script async type="text/javascript" src={% static "index.js" %}></script>
+
+</head>
+
+<body backgraund="rgba(0,0,0,1)" style="background: rgba(0,0,0,1); margin: 0;" onload="PostAddressAccount()">
+    <div class="sitename">
+        <p style="text-align: center;">Meet SpaceApes</p>
+    </div>
+    <div class="nav" style="background: transparent;">
+
+        <div class="connect">
+            <button type="button" style="font-size: 20px;">
+                <a style='color: white; pointer-events: auto;' href="#example2" id="resultButton"><div id="result" class="rerer"></div></a>
+            </button>
+        </div>
+    </div>
+
+    <div class="lightbox" id="example2">
+        <figure>
+            <a href="#" class="close"></a>
+
+            <figcaption>
+                <div onclick="getAccount()">
+                    <img src={% static "IMG/MetaMask_Fox.svg.png" %}>
+                    <button type="button" name="button">Metamask</button>
+                </div>
+            </figcaption>
+
+        </figure>
+    </div>
+
+
+
+
+    <div class="main_blog">
+        <div class="welcom_text">
+            <div class="text">
+
+            </div>
+        </div>
+        <div class="smart_contract_text" id="smart_contract_text">-</div>
+        <div class="main_nft_box">
+            <div class="main_nft_box_flex">
+                <div class="main_box_text">
+                    <div style="color: #89db69; font-size: 20px; line-height: 25px;">
+                        Space Apes was first introduced by international scientists as a way to test these ape creatures with a new drug in order to endure severity on outer space.<br />
+                        The program started with 10k selected apes to make the most reliable testing with zero gravity and test longevity in space.<br />
+                        <br />
+                        The launch date was the most anticipated event in mankind history. But something went terrible wrong when the apes reached outer space… The drug gave them extra terrestrial powers unknown until this event: apes could think and operate any tool mankind has achieved in millenniums in a matter of days.<br />
+                        <br />
+                        For these 10k apes, they became known to the world as SPACE APES! A new era of intelligence for apes started, and they mastered not only space but crypto finance technology that would be widely used among humans.<br />
+                        <br />
+                        The Space Apes started a new exclusive club that only the brave and the strong will be part.<br />
+                        <br />
+                        Come get your Space Ape and be a member of this exciting new family. These apes just started and we humans can only guess on all knowledge they shall share with us with all their space missions ahead.
+                    </div>
+                </div>
+                <div class="nft_box">
+                    <div class="box_nft_text">
+                        <div class="text_box">
+                            <h1>Space Apes</h1>
+                        </div>
+                    </div>
+                    <div class="box_nft_text_1">
+                        <div class="text_box_1">
+                            <h1>Total supply: 10000 NFTs</h1>
+                        </div>
+                    </div>
+                    <div class="main_about_nft">
+                        <div class="about_nft">
+                            <div class="gif_nft">
+                                <img src={% static "IMG/nft.gif" %}>
+                            </div>
+                            <div class="info_nft">
+                                <p class="p1_1">Price per NFT</p>
+                                <p class="p1_2">2000 MTV + gas</p>
+                                <p class="p1_3">Minted NFT</p>
+                                <p id="minted_nft" class="p1_4">3951/10000</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="main_count">
+                        <div class="count">
+                            <div class="count_of">
+                                <div class="count_of_nft">
+                                    <!-- <input type="number" name="" id="" value="" min="1"> -->
+                                    <div class="minandplus">
+                                        <div class="minus">
+                                            <h1 id="minus" onclick="mins()" src={% static "IMG/minus.png" %} style="color: white; margin-bottom: 5px;" class="noncoursor">-</h1>
+                                            <!-- <button id="minus" onclick="mins()">-</button> -->
+                                        </div>
+                                        <div class="inputatation">
+                                            <h3 id="output" value="1"></h3>
+                                        </div>
+                                        <div class="plus">
+                                            <h1 onclick="pls()" src={% static "IMG/plus.png" %} style="color: white;" class="noncoursor">+</h1>
+                                            <!-- <button id="plus" onclick="pls()">+</button> -->
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="polzunok">
+                                <input type="range" id="fader" min="1" max="100" value="1" step="1" onmousemove="rangeslider(this.value)" onchange="rangeslider(this.value)">
+                            </div>
+
+                            <div class="max" onclick="max()">MAX 100</div>
+                        </div>
+                    </div>
+
+                    <div class="main_tottal">
+                        <div class="tottal">
+                            <div class="total_text">
+                                <p>Total</p>
+                            </div>
+
+                            <div class="price">
+                                <!-- <p>0.5 ETH + gas</p> -->
+                                <h1 class="h1_2" id="total"></h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main_btuun">
+                        <div class="btuun">
+                            <!-- <button type="button">
+                                MINT NOW
+                            </button> -->
+                            <button id="mint_button" onclick="mint()" type="button" style="cursor: pointer;">MINT NOW</button>
+                        </div>
+
+                    </div>
+                    <!-- <p class="minte">MINTED: 95 / 100</p> -->
+                </div>
+                <div class="main_box_text" style="padding-bottom: 50px;">
+                    <div style="color: #89db69; font-size: 20px; text-align: center; line-height: 28px;">
+                        <i><b>ROADMAP</b></i><br />
+                        <br />
+                        <u>2022 - 03</u><br />
+                        • Implement new ranking system (Discord)<br />
+                        • New logo reveal<br />
+                        • Holders airdrop 1:1<br />
+                        • List new contract on marketplace<br />
+                        <br />
+                        <u>2022 - Q4</u><br />
+                        • Mint open (10k)<br />
+                        • $SAPE token contract<br />
+                        • Airdrop $SAPE to Holders<br />
+                        • List $SAPE on exchange<br />
+                        <br />
+                        <u>2023 - Q1</u><br />
+                        • Game launch<br />
+                        • New collection series<br />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="join">
+        <h1 style="text-align: center; font-family: Popins SemiBold; color: white; margin: 50px 0 10px 0;">Find us on Twitter & Discord</h1>
+        <div class="main_comunity">
+            <div class="comunity">
+                <div class="img3 img">
+                    <a href="https://twitter.com/mtvspaceapes?s=11&t=rrZCTGDHa0jluIuEVWW6Ww" target="_blank"><img src={% static "IMG/social/tw.png" %}></a>
+                </div>
+                <div class="img5 img">
+                    <a href="https://discord.gg/D9crZB4zsJ" target="_blank"><img src={% static "IMG/social/dis.png" %}></a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <script src="../babydog/jquery.nice-number.js"></script>-->
+    <!--<script>
+        $(function(){
+            $('input[type="number"]').niceNumber();
+        });
+    </script>-->
+</body>
+</html>
